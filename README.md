@@ -21,15 +21,40 @@ I started with electrical panels, then moved to PCBs and microcontrollers, and n
 
 I'm especially interested in **processor architectures** and in how hardware and software meet: buses, drivers, toolchains, operating systems.
 
-> [!NOTE]
-> **Currently working on:** taking a TPU design from RTL to layout with Cadence tools, and HW/SW co-design with Linux on a ZedBoard.
+
+## 🔭 What I'm working on
+
+### TPU on silicon
+Taking a TPU design from RTL to layout: synthesis and place & route with Cadence Genus and Innovus, verified in Xcelium. A university project, not public (yet).
+
+**Technologies:** `SystemVerilog` `Cadence Genus` `Innovus` `Xcelium`
+
+### Didactic sensor board
+A sensor board for the STM32 Nucleo-64, made to help students learn embedded systems hands-on with real sensors and actuators.  
+It's a team project: I'm working on the schematic and on the CMake-based STM32 libraries. A first working demo is already running.
+
+**Technologies:** `STM32` `C` `CMake` `PCB design` `Sensors`
+
+### SoC design on a ZedBoard
+Learning how a full system on chip comes together: on-chip buses, IP integration and HW/SW co-design, with Linux running on a Xilinx Zynq.
+
+**Technologies:** `Xilinx Zynq` `Linux` `AXI` `HW/SW co-design`
+
+
+### Didactic sensor board *(in progress)*
+A sensor board for the STM32 Nucleo-64, made to help students learn embedded systems hands-on with real sensors and actuators.
+It's a team project: I'm working on the schematic and on the CMake-based STM32 libraries. A first working demo is already running, wich is not public (yet).
+
+**Technologies:** `STM32` `C` `CMake` `PCB design` `Sensors`
 
 ---
 
+# Past projects
+
 ## 🧠 Digital hardware
 
-### RISC-V CPU
-A RISC-V core written in VHDL, with an AXI controller, a working toolchain and newlib-nano, so it can actually run C code.  
+### Thesis - RISC-V CPU whit BNN accelerator
+A RISC-V (RV32I) core written in VHDL, with an AXI controller, GPIOS, I2C master interface, UART (through PS), a working toolchain and system calls implementation for newlib-nano, so it can actually run C code.
 In my bachelor's thesis I extended it with a small **BNN hardware accelerator**.
 
 **Technologies:** `VHDL` `RISC-V` `AXI` `Xilinx FPGA` `newlib`  
